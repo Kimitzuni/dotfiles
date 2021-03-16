@@ -17,7 +17,7 @@ fi
 
 # launch the session, commands below this line will be ignored
 slstatus&
-xcompmgr -c -0 .75 -f -F -I 0.025 -O 0.025&
+xcompmgr -c -O .75 -f -F -I 0.05 -O 0.025&
 setxkbmap gb&
 feh --bg-scale ~/.config/fehbg/sunset-landscape-wide&
 xset r rate 400 100&
