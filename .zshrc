@@ -1,40 +1,49 @@
-export ZSH="~/.oh-my-zsh"
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#8c8c8c"
-ZSH_THEME="bira"
+export ZSH="/home/kt/.oh-my-zsh"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#525252"
+ZSH_THEME="kimitzuni"
 
-#########################################################
 
-suckless="~/.suckless/"
-dwmdir="$suckless/dwm"
-stdir="$suckless/st"
-sldir="$suckless/slstatus"
+# Aliases & things
+
+export EDITOR="vim"
+suckless="~/suckless"
+dwm="$suckless/dwm"
+st="$suckless/st"
+sl="$suckles/slstatus"
+demu="$suckless/dmenu"
 
 alias sl="cd $suckless"
-alias vdwm="vim $sdwmdir/config.h"
-alias vst="vim $stdir/config.h"
-alias vsl="vim $sldir/config.h"
+alias vdwm="vim $dwm/config.h"
+alias vst="vim $st/config.h"
+alias vsl="vim $sl/config.h"
 
-alias mdwm="cd $dwmdir && sudo make install"
-alias msl="cd $sldir && sudo make install"
-alias mst="cd $stdir && sudo make install"
+alias mkwm="cd $dwm && mki"
+alias mkst="cd $st && mki"
+alias mksl="cd $st && mki"
+
+alias mki="sudo make install"
+alias mkc="make clean"
+alias mkci="sudo make clean install"
 
 alias lkuk="sudo loadkeys uk"
 alias nf="neofetch"
-alias v="vim"
-alias n="vim"
-alias mk="make"
-alias mkc="make clean"
-alias mki="sudo make install"
+alias nfs="neofetch --ascii_distro $distro\_small"
+
 alias s="startx"
 
-# alias p="sudo pacman -S"
-# alias pr="sudo pacman -Runs"
-# alias psy="sudo pacman -Sy"
-# alias psyu="sudo pacman -Syu"
+alias pacman="sudo pacman"
+#################################################################
 
-alias em="sudo emerge"
-alias ema="sudo emerge --ask"
-alias eu="sudo etc-update"
+plugins=(
+	git
+	bundler
+	dotenv
+	osx
+	rake
+	rbenv
+	ruby
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+)
 
-plugins=(git bundler dotenv osx rake rbenv ruby zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
