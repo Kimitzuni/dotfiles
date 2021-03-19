@@ -16,9 +16,10 @@ fi
 [ -r ~/.xprofile ] && . ~/.xprofile
 
 # launch the session, commands below this line will be ignored
-slstatus&
+# slstatus&
+dwmblocks&
 xcompmgr -c -O .75 -f -F -I 0.05 -O 0.025&
 setxkbmap gb&
-feh --bg-scale ~/.config/fehbg/sunset-landscape-wide&
+feh --bg-scale ~/.config/fehbg/wallpaper.png&
 xset r rate 400 100&
 exec dwm
