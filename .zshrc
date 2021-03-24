@@ -1,6 +1,6 @@
-export ZSH="/home/kt/.oh-my-zsh"
+export ZSH="/home/$(whoami)/.oh-my-zsh"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#525252"
-ZSH_THEME="kimitzuni"
+ZSH_THEME="gentoo"
 
 
 # Aliases & things
