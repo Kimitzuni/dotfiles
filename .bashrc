@@ -8,11 +8,6 @@
 alias ls='ls --color=auto'
 # PS1='[\u@\h \W]\$ '
 
-# archtext=figlet "             Arch Linux"
-
-
-alias neofetch="figlet '             Arch Linux' && neofetch --ascii_distro arch_small"  # Quick Neofetch
-# alias neofetch="nf"
 alias s="startx"				      # Start Xorg
 alias mixer="alsamixer"				      # Volume Controls
 
